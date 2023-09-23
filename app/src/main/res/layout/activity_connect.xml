@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connect">
+
+    <ScrollView
+        android:layout_above="@id/scan_bluetooth"
+        android:id="@+id/scroller_for_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/on_off_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/lightGrey"
+                android:gravity="center|start"
+                android:text="    Turn Bluetooth on or off" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b6b6b6"/>
+            <Switch
+                android:id="@+id/bluetooth_on_off"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="@string/turn_on_bluetooth" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b6b6b6"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightGrey">
+                <TextView
+                    android:id="@+id/lbl_pareied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="start|center"
+                    android:text="    Paired Devices" />
+
+                <ProgressBar
+                    android:id="@+id/paired_gif"
+                    android:layout_width="19dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="19dp"
+                    android:theme="@style/AppTheme.WhiteAccent"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b6b6b6"/>
+            <ListView
+                android:id="@+id/paired_devices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/empty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/turn_on"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b6b6b6"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightGrey">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="start|center"
+                    android:text="    Available Devices" />
+
+                <ProgressBar
+                    android:id="@+id/available_gif"
+                    android:layout_width="19dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="19dp"
+                    android:theme="@style/AppTheme.WhiteAccent"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b6b6b6"/>
+
+            <ListView
+                android:id="@+id/available_devices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/empty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/turn_on"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/scan_bluetooth"
+        android:background="#b6b6b6"/>
+
+    <Button
+        android:id="@+id/scan_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="?android:selectableItemBackground"
+        android:padding="4dp"
+        android:drawableTop="@drawable/ic_search_black_24dp"
+        android:text="@string/scan_bluetooth"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

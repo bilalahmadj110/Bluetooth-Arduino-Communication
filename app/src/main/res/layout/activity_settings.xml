@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/set_max_min_y"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:selectableItemBackground"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/max_min_string"
+                    android:layout_toStartOf="@id/max_y"
+                    android:layout_toLeftOf="@id/max_y"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentLeft="true"
+                     />
+
+                <TextView
+                    android:id="@+id/max_y"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_y"
+                    android:textColor="@color/settings_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/min_y"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min_y"
+                    android:textColor="@color/settings_color"
+                    android:layout_below="@id/max_y"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#74C4C4C4"
+                tools:ignore="SmallSp" />
+
+
+            <RelativeLayout
+                android:id="@+id/set_graph_freq"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:selectableItemBackground"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/text2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/graph_freq__string"
+                    android:layout_toStartOf="@id/freq"
+                    android:layout_toLeftOf="@id/freq"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/freq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10_hz"
+                    android:textColor="@color/settings_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_noti"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#74C4C4C4"
+                tools:ignore="SmallSp" />
+
+
+            <RelativeLayout
+                android:id="@+id/set_graph_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:selectableItemBackground"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/rect"
+                    />
+
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/graph_color__string"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@id/color"
+                    android:layout_toLeftOf="@id/color"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/settings_color"
+                    android:background="@color/settings_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#74C4C4C4"
+                tools:ignore="SmallSp" />
+
+            <RelativeLayout
+                android:id="@+id/set_graph_Line_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:selectableItemBackground"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/set_graph_line_color"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@id/color_line"
+                    android:layout_toLeftOf="@id/color_line"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentLeft="true" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/rect"
+                    />
+
+                <TextView
+                    android:id="@+id/color_line"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/settings_color"
+                    android:background="@color/settings_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#74C4C4C4"
+                tools:ignore="SmallSp" />
+
+            <RelativeLayout
+                android:id="@+id/set_graph_Line_thick"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:selectableItemBackground"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/set_graph_line_thickness"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@id/thick_line"
+                    android:layout_toLeftOf="@id/thick_line"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/thick_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/settings_color"
+                    android:textSize="16sp"
+                    android:text="@string/_10"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#74C4C4C4"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

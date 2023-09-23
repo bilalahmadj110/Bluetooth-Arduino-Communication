@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">SCG Signal Visualizer</string>
+    <string name="turn_on">Tap scan bluetooth devices to scan available nearby devices</string>
+    <string name="scan_bluetooth">Scan Bluetooth Devices</string>
+    <string name="turn_on_bluetooth">Turn on bluetooth</string>
+    <string name="error_connect">You\'re only allowed to connect raw devices e.g; Arduino bluetooth module</string>
+    <string name="settings">Settings</string>
+    <string name="connect_bluetooth">Connect bluetooth</string>
+
+    <string name="empty2">Tap \"Scan Bluetooth Devices\" to show nearby devices here</string>
+    <string name="empty1">Turn on Bluetooth to show paired devices</string>
+    <string name="play">Play</string>
+    <string name="title_activity_settings2">Settings</string>
+    <string name="export">Export</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Shared_Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Shared_Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="max_min_string">Set maximum and minimum values of y-axis</string>
+    <string name="graph_freq__string">Set up the frequency for graph update (Hz)</string>
+    <string name="graph_color__string">Change the background color of graph</string>
+
+    <string name="settings_noti">Please set graph update rate between 1-100 Hz (recommended: 10 Hz) for more graph accuracy.</string>
+    <string name="max_y">max: y</string>
+    <string name="min_y">min: y</string>
+    <string name="_10_hz">10 Hz</string>
+    <string name="set_graph_line_color">Set graph line color</string>
+    <string name="set_graph_line_thickness">Set graph line thickness</string>
+    <string name="_10">10</string>
+    <string name="max_200_pt_speaker">MAX 200 PT Speaker</string>
+    <string name="pairing">Pairing...</string>
+    <string name="sample_text">Sample text</string>
+
+    <string-array name="color_list">
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>White</item>
+    </string-array>
+</resources>

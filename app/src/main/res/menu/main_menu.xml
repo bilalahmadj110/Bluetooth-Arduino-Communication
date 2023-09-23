@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:icon="@drawable/ic_play_arrow_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/action_play_stop"
+        android:title="@string/play"
+        />
+
+    <item
+        android:icon="@drawable/ic_bluetooth_white_24dp"
+        android:id="@+id/action_connect_bluetooth"
+        app:showAsAction="always"
+        android:title="@string/connect_bluetooth"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/settings"
+        />
+
+    <item
+        android:id="@+id/action_export"
+        android:icon="@drawable/export"
+        app:showAsAction="ifRoom"
+        android:title="@string/export"
+        />
+
+</menu>
